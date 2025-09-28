@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Status: DANGER 🚨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: linear-gradient(135deg, #daa08b, #e14857);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 500px;
+      height: 350px;
+      background: #ffffffdd;
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 40px 50px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .bar {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 12px;
+      background: #e74c3c;
+    }
+
+    .bar.top {
+      top: 0;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    .bar.bottom {
+      bottom: 0;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    h1 {
+      margin-top: 50px;
+      color: #d9534f;
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    h1::before {
+      content: '🚨';
+      font-size: 32px;
+      margin-right: 12px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    p {
+      margin: 30px 0 0;
+      font-size: 20px;
+      color: #333;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    button {
+      margin-top: 25px;
+      background: #e74c3c;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(231, 76, 60, 0.5);
+    }
+
+    button:hover {
+      background: #fff;
+      color: #e74c3c;
+      box-shadow: 0 5px 25px rgba(231, 76, 60, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bar top"></div>
+    <div class="bar bottom"></div>
+
+    <h1>STATUS: DANGER</h1>
+    <p>You are in a BAD condition!</p>
+    <button onclick="location.href='safe.html'">I'm OK!</button>
+  </div>
+
+</body>
+
+
+</html>

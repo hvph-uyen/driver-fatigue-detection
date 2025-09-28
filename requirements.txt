@@ -1,0 +1,10 @@
+torch
+torchvision
+torchaudio
+scikit-learn
+imbalanced-learn
+joblib
+pandas
+numpy
+pywebview
+pyserial
