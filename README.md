@@ -34,10 +34,10 @@ It provides real-time alerts via a desktop interface and can be connected to har
 ## Installation & Run 
 
 1. **Clone the repo**
-   ```
-   git clone https://github.com/<your-username>/<your-repo>.git
-   cd <your-repo>
-   ```
+```
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+```
 2. **Create & activate virtual environment**
 - Linux / macOS:
 ```
