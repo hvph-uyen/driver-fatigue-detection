@@ -58,7 +58,7 @@ class StatusApp:
             if not self.data_buffer:
                 continue
 
-            filename = 'data.csv'
+            filename = 'data/data.csv'
             with open(filename, 'w', newline='') as f:
                 writer = csv.writer(f)
                 writer.writerow(['time', 'steering_angle_deg', 'yaw_rate_deg'])
